@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!--Use this for Carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--USe this for lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> 
+    <img class="rounded-circle img-fluid" src="https://as1.ftcdn.net/v2/jpg/00/90/67/40/1000_F_90674026_YWcMCdiwXbvX8jXJ1ha6Qj6s4VbQ4P4S.jpg"
+     width="50" height="50">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colnavbar"> 
+        <span class="navbar-toggler-icon"> </span>
+     </button>
+     <div class="collapse navbar-collapse" id="colnavbar">
+         <ul class="navbar-nav ml-auto">
+        <a href="#whopage"> <li class="nav-item"> Who </li> </a>
+        <a href="#whatpage"> <li class="nav-item"> What </li> </a>
+        <a href="#wherepage"> <li class="nav-item"> Were </li> </a>
+        </ul>
+     </div>
+</nav>
+
+
+
+<br><br><br><br><br>
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.jpg"> 
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jpg"> 
+          </div>
+          <div class="carousel-item">
+            <p>a</p> <img src="img3.jpg"> 
+          </div>
+      </div>
+          
+      <ul class="carousel-indicators">
+        <li class="slide1" data-target="#mycarousel" data-slide-to="0"></li>
+        <li class="active" data-target="#mycarouse1" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+      </ul>
+      <a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"> </span>
+       </a>
+       <a class="carousel-control-next" href="#mycarousel" data-slide="next">
+        <span class="carousel-control-next-icon"  ></span>
+        </a>
+    </div>
+
+    <div id="gallery-lightbox" class="row" data-toggle="modal" data-target="#modal">
+      <div class="col-md-4 col-lg-3" >
+        <img class="w-100" data-target="#carousel" data-slide-to="2" src="img1.jpg"> 
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <img src="img2.jpg" class="w-100" data-target="#carousel" data-slide-to="1"> 
+      </div>
+      <div class="col-md-4 col-lg-3">
+       <img src="img3.jpg" class="w-100" data-target="#carousel" data-slide-to="0"> 
+      </div>
+    </div>
+    <div class="modal" id="modal">
+     <div class="modal-dialog"> 
+     <div class="modal-content"> 
+      <div id="carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">d
+              <img src="img1.jpg"> 
+            </div>
+            <div class="carousel-item">
+              <img src="img2.jpg"> 
+            </div>
+            <div class="carousel-item">
+              <p>a</p> <img src="img3.jpg"> </div>
+
+        </div>
+        <ul class="carousel-indicators">
+          <li class="slide1" data-target="#carousel" data-slide-to="0"></li>
+          <li class="active" data-target="#carouse1" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ul>
+        
+
+     </div>
+     </div>
+    </div>
+
+
+
+    <br>
+    <div id="whatpage" class="container-fluid bg-dark  text-center">
+        <h3> What am I? </h3>
+        <a href="#" class="btn btn-outline-secondary" id="buttona" data-toggle="modal" data-target="#mymodal" >
+            <span class="glyphicon glyphicon-search" id="buttonsearch"></span> search
+        </a>
+    </div>
+    <div id="wherepage"  class="container-fluid btn-dark text-center">
+        <h4> Where am I? </h4>
+        <div class="row">
+         <div class="col-sm-4">
+            <img class="imgs" src="https://f4.bcbits.com/img/a1177449710_10.jpg">
+         </div>
+         <div class="col-sm-4">
+            <img class="imgs" src="https://slideplayer.com/9401083/28/images/slide_1.jpg">
+         </div>
+         <div class="col-sm-4">
+           <img class="imgs" src="https://www.indiansinkuwait.com/ShowImage.aspx?img=/Newsfile/2912202015142312dec2920riya.jpg&w=650">
+         </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mymodal">
+      <div class="modal-dialog"> 
+        <div class="modal-content"> 
+         <div class="modal-header">
+            <h3>Harry Potter</h3>
+            <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+             </button>
+         </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-4">
+            <img class="img1" src="https://sm.ign.com/ign_nl/cover/h/harry-pott/harry-potter-the-series_t6ap.jpg"> 
+                </div>
+             <div class="col-sm-8">
+               <p> The Harry Potter film series is a British film series based on the first seven Harry Potter books by the English author J.K. Rowling. The series started in 2001 and was completed in 
+                2011 and consists of eight feature films. The last book, the seventh, was made into a film in two
+                 parts. Since 2016, the series has been supplemented with several prequels, which are based on the 
+                 book Fantastic Animals and Where to Find Them.</p>
+             </div>
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+       <button class="close" data-dismiss="modal">
+          close
+       </button>
+     </div>
+
+      </div> 
+    </div>
+     
+    </div>
+
+
+
+
+</body>
+</html>
